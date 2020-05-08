@@ -1,0 +1,419 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "recommend a song",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "CouchPotatoIntent",
+                    "slots": [],
+                    "samples": [
+                        "happy af",
+                        "couch potato",
+                        "lazy"
+                    ]
+                },
+                {
+                    "name": "RecommendationIntent",
+                    "slots": [
+                        {
+                            "name": "salaryImportance",
+                            "type": "salaryImportanceType",
+                            "samples": [
+                                "{I_Want} to be {salaryImportance}",
+                                "{salaryImportance}"
+                            ]
+                        },
+                        {
+                            "name": "personality",
+                            "type": "personalityType",
+                            "samples": [
+                                "{I_Am} {article} {personality}",
+                                "{personality}"
+                            ]
+                        },
+                        {
+                            "name": "preferredSpecies",
+                            "type": "preferredSpeciesType",
+                            "samples": [
+                                "{I_Like} {preferredSpecies}",
+                                "{preferredSpecies}"
+                            ]
+                        },
+                        {
+                            "name": "bloodTolerance",
+                            "type": "bloodToleranceType",
+                            "samples": [
+                                "I would {bloodTolerance}",
+                                "{bloodTolerance}"
+                            ]
+                        },
+                        {
+                            "name": "I_Like",
+                            "type": "iSubjectType"
+                        },
+                        {
+                            "name": "I_Want",
+                            "type": "iSubjectType"
+                        },
+                        {
+                            "name": "article",
+                            "type": "articleType"
+                        },
+                        {
+                            "name": "I_Am",
+                            "type": "IAmType"
+                        }
+                    ],
+                    "samples": [
+                        "lets hear a song",
+                        "i want to hear a song",
+                        "recommend a song",
+                        "tell my personality",
+                        "recommend a job",
+                        "{I_Like} {preferredSpecies}",
+                        "{I_Like} {bloodTolerance}",
+                        "{I_Am} {article} {personality}",
+                        "{I_Want} to be {salaryImportance}",
+                        "to recommend a job",
+                        "start my career"
+                    ]
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                }
+            ],
+            "types": [
+                {
+                    "name": "articleType",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "a"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "an"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "bloodToleranceType",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "low",
+                                "synonyms": [
+                                    "smile",
+                                    "very happy",
+                                    "happy",
+                                    "happ",
+                                    "yuck",
+                                    "no way",
+                                    "gross",
+                                    "I can't stand it",
+                                    "can't stand it",
+                                    "throw up when I see it",
+                                    "scream"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "high",
+                                "synonyms": [
+                                    "world has nothing for me",
+                                    "very sad",
+                                    "sad",
+                                    "I like blood",
+                                    "doesn't bother me",
+                                    "blood is natural",
+                                    "shrug"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "IAmType",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "I am"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "iSubjectType",
+                    "values": [
+                        {
+                            "id": "true",
+                            "name": {
+                                "value": "positive",
+                                "synonyms": [
+                                    "I want",
+                                    "I prefer",
+                                    "I really like",
+                                    "I love",
+                                    "I like"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "false",
+                            "name": {
+                                "value": "negative",
+                                "synonyms": [
+                                    "I don't want",
+                                    "I really don't like",
+                                    "I don't like",
+                                    "I hate"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "personalityType",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "extrovert",
+                                "synonyms": [
+                                    "yup",
+                                    "yes",
+                                    "when are we meeting",
+                                    "where is a prty",
+                                    "social butterfly",
+                                    "love to party"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "introvert",
+                                "synonyms": [
+                                    "noops",
+                                    "no",
+                                    "leave me",
+                                    "to be alone",
+                                    "misunderstood"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "preferredSpeciesType",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "animals",
+                                "synonyms": [
+                                    "slow af",
+                                    "slow",
+                                    "dogs",
+                                    "cats",
+                                    "birds",
+                                    "turtles",
+                                    "puppies",
+                                    "kittens",
+                                    "elephants"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "people",
+                                "synonyms": [
+                                    "very fast",
+                                    "fast",
+                                    "men",
+                                    "women",
+                                    "kids",
+                                    "humans"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "salaryImportanceType",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "unimportant",
+                                "synonyms": [
+                                    "jazz",
+                                    "money is evil",
+                                    "money is not important",
+                                    "not a sell out",
+                                    "nope",
+                                    "don't care about money"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "somewhat",
+                                "synonyms": [
+                                    "classical",
+                                    "just enough",
+                                    "somewhat important",
+                                    "not top priority",
+                                    "support my family"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "very",
+                                "synonyms": [
+                                    "rock",
+                                    "high salary",
+                                    "filthy rich",
+                                    "billionaire",
+                                    "important",
+                                    "nothing more important"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "dialog": {
+            "intents": [
+                {
+                    "name": "RecommendationIntent",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "salaryImportance",
+                            "type": "salaryImportanceType",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Intent-RecommendationIntent.IntentSlot-salaryImportance"
+                            }
+                        },
+                        {
+                            "name": "personality",
+                            "type": "personalityType",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Intent-RecommendationIntent.IntentSlot-personality"
+                            }
+                        },
+                        {
+                            "name": "preferredSpecies",
+                            "type": "preferredSpeciesType",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Intent-RecommendationIntent.IntentSlot-preferredSpecies"
+                            }
+                        },
+                        {
+                            "name": "bloodTolerance",
+                            "type": "bloodToleranceType",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Intent-RecommendationIntent.IntentSlot-bloodTolerance"
+                            }
+                        },
+                        {
+                            "name": "I_Like",
+                            "type": "iSubjectType",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {}
+                        },
+                        {
+                            "name": "I_Want",
+                            "type": "iSubjectType",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {}
+                        },
+                        {
+                            "name": "article",
+                            "type": "articleType",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {}
+                        },
+                        {
+                            "name": "I_Am",
+                            "type": "IAmType",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {}
+                        }
+                    ]
+                }
+            ],
+            "delegationStrategy": "SKILL_RESPONSE"
+        },
+        "prompts": [
+            {
+                "id": "Elicit.Intent-RecommendationIntent.IntentSlot-salaryImportance",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Whats your usual music type , Rock , Jazz or classical ?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Intent-RecommendationIntent.IntentSlot-personality",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Are you a millenial?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Intent-RecommendationIntent.IntentSlot-preferredSpecies",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "are you a slow guy or fast person?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Intent-RecommendationIntent.IntentSlot-bloodTolerance",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "are you happy or sad"
+                    }
+                ]
+            }
+        ]
+    }
+}
